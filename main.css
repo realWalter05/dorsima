@@ -1,0 +1,112 @@
+#intro-image {
+    background: url("img/solary.jpg") no-repeat scroll left center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#solar-banner {
+    background: url("img/solarybanner.jpg") no-repeat scroll left bottom;
+    background-size: cover;
+    height: 50vh;
+}
+
+.spacer {
+    margin-top: 20rem;
+}
+
+.img-circle {
+    border-radius: 30px;
+    width: 80%;
+}
+
+.unstyled-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navbar-white {
+    background: #fff;
+    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+    transition: ease-in-out 0.2s;
+}
+
+#form-msg {
+    height: 10rem;
+}
+
+#product-carousel .carousel-inner img {
+    width: 70%;
+}
+
+.bg-differ {
+    background: rgb(248, 248, 250);
+}
+
+.reference-div {
+    width: 35rem !important;
+}
+
+.copyright-text {
+    opacity: 0.3;
+    text-align: right;
+    float: right;
+}
+
+#ilustr-img {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 1400px) and (min-width:  1200px) {
+    .reference-div {
+        width: 30rem !important;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .reference-div {
+        width: 27rem !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact form {
+        width: 70%; 
+        margin-left: 4rem;
+    }
+
+    #contact-form-div {
+         width: 20%;
+         display: block !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact form button {
+        margin: 0.5rem 0 0 0 !important;
+        width: 100% !important;
+    }
+
+    #product-sell button {
+        width: 100% !important;
+    }
+
+
+    #contact-title {
+        margin-top: 1.5rem !important;
+    }
+
+    .copyright-text {
+        opacity: 0.3;
+        text-align: center;
+        float: none;
+    }
+}
+
+
+
+
+

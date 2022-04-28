@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dorsima - solární divize</title>
+    <link href="main.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="pb-4">
+        <nav class="navbar navbar-expand-lg transparent navbar-dark fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dorsima</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navContent">
+                    <ul class="navbar-nav  mt-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Naše služby</a>
+                        </li>                  
+                        <li class="nav-item">
+                            <a class="nav-link" href="#references">Reference</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product-sell">O eshopu</a>
+                        </li>                                                         
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prices">Ceník</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontakt</a>
+                        </li>                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="intro-image" class="bg-image shadow-2-strong" style="position: relative;">
+            <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.5);">
+                <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Instalace solárních panelů</h1>
+                        <h5 class="mb-4">Každá naše nabídka je dělaná na míru přesně Vašemu domu.</h5>
+                        <a class="btn btn-outline-light btn-lg m-2" href="#contact" role="button">Kontaktujte nás</a>
+                        <a class="btn btn-outline-light btn-lg m-2" href="https://dorsima.myshopify.com/" target="_blank" role="button">Eshop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white p-2" id="ilustr-img">ilustr. obr.</div>
+        </div>
+    </header>
+    <main>
+        <section id="services" class="mt-5 pt-5 pb-5">
+            <div class="container text-center">
+                <h3>Dorsima</h3>
+                <p><em>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</em></p>
+                <p>Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                <div class="row mt-5 mb-5">
+                    <div class="col-lg-4 mt-5">
+                        <p><strong>Umístění</strong></p><br>
+                        <img class="img-circle img-fluid" src="img/drafting.jpg" alt="Random Name">
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <p><strong>Instalace</strong></p><br>
+                        <img class="img-circle img-fluid" src="img/instalation.jpeg" alt="Random Name">
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <p><strong>Správa</strong></p><br>
+                        <img class="img-circle img-fluid" src="img/sprava.jpg" alt="Random Name">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-5 pb-4 text-center w-100">
+            <div id="solar-banner" class="bg-image shadow-2-strong w-100">
+                <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+            </div>
+        </section>           
+
+        <section id="references" class="pt-5 pb-5 container">
+            <h3 class="text-center mt-5">Reference</h3>
+            <div id="references-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#references-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#references-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row flex justify-content-center">
+                        <div class="card border-0 m-4 p-3 reference-div">
+                           <img class="card-img-top" src="./img/references/reference00.jpeg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Miroslav Pavlik 32KWp</h5> 
+                              <p class="card-text" style="min-height: 6.1rem;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           </div>
+                        </div>                        
+                        <div class="card border-0 m-4 p-3 reference-div">
+                           <img class="card-img-top" src="./img/references/reference01.jpeg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">1150 KWp  FVE Bernartice</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Make up the bulk of the card's content.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row flex justify-content-center">
+                        <div class="card border-0 m-4 p-3 reference-div">
+                           <img class="card-img-top" src="./img/references/reference02.jpeg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">STET s.r.o. 10KWp</h5>
+                              <p class="card-text" style="min-height: 3.5rem;">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="card border-0 m-4 p-3 reference-div">
+                           <img class="card-img-top" src="./img/references/reference03.jpeg" alt="Card image cap">
+                           <div class="card-body">
+                              <h5 class="card-title">Fotovoltaiky</h5>
+                              <p class="card-text">Some quick example text to build on the card title Some quick example text to build on the card tit and make up. Some quick example text to build on the card title Some quick example text to build on the card tit and make up</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>            
+        </section>
+
+        <section id="product-sell" class="mt-5 mb-5 w-100 bg-differ ">
+            <div class="pt-5 pb-5 container">
+               <h3 class="mt-5 text-center">Internetový obchod</h3>
+               <div class="row">
+                  <div class="col-xl">
+                     <div id="product-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-indicators">
+                           <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                           <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                           <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner text-center">
+                           <div class="carousel-item active">
+                              <figure class="figure">
+                                 <img src="./img/products/product00.png" alt="Obrázek mikrotransformátoru"/>
+                                 <figcaption class="figure-caption text-right mb-5">Mikrotransformátor</figcaption>
+                              </figure>                              
+                           </div>           
+                           <div class="carousel-item">
+                              <figure class="figure">
+                                 <img src="./img/products/product01.png" alt="Obrázek mikrotransformátoru"/>
+                                 <figcaption class="figure-caption text-right mb-5">Mikrotransformátor 1.</figcaption>
+                              </figure>                             
+                           </div>  
+                           <div class="carousel-item">
+                              <figure class="figure">
+                                 <img src="./img/products/product02.png" alt="Obrázek mikrotransformátoru"/>
+                                 <figcaption class="figure-caption text-right mb-5">Mikrotransformátor 2.</figcaption>
+                              </figure>                             
+                           </div>                                                                              
+                        </div>                       
+                     </div>             
+                  </div>
+                  <div class="col-xl p-5">
+                     <h6>Od 26.4.2022 jsme se rozhodli spustit eshop na zaměřený na solární techniku. Najdete tam produkty jako Lorem ipsum dolor sit amet, consectetuer</h6>
+                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Nullam dapibus fermentum ipsum.</p>
+                     <h6 class="py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                        </svg>
+                        Naše produkty
+                     </h6>
+                     <a href="dorsima.myshopify.com" class="text-decoration-none p-3 sm-w-100"><button class="form-control btn-dark w-50">Do eshopu</button></a>
+                  </div>
+            </div>
+        </section>
+
+        <section id="prices" class="container p-sm-5">
+            <div class="row mt-4">
+               <h3 class="text-center mb-2">Ceník</h3>
+               <div class="col-lg-4 col-md-12 mb-4 p-3">
+                  <div class="card h-100 shadow-lg">
+                     <div class="card-body">
+                        <div class="text-center p-3">
+                           <h5 class="card-title">Základní</h5>
+                           <small>Rodinný dům</small>
+                           <br><br>
+                           <span class="h3">20 000 Kč</span>
+                           <br><br>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Dapibus ac facilisis in
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Vestibulum at eros
+                        </li>
+                     </ul>
+                     <div class="card-body text-center m-3">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12 mb-4 p-3">
+                  <div class="card h-100 shadow-lg">
+                     <div class="card-body">
+                        <div class="text-center p-3">
+                           <h5 class="card-title">Standardní</h5>
+                           <small>Firemní budovy</small>
+                           <br><br>
+                           <span class="h3">60 000 Kč</span>
+                           <br><br>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Dapibus ac facilisis in
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Vestibulum at eros
+                        </li>
+                     </ul>
+                     <div class="card-body text-center m-3">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-12 mb-4 p-3">
+                  <div class="card h-100 shadow-lg">
+                     <div class="card-body">
+                        <div class="text-center p-3">
+                           <h5 class="card-title">Premiový</h5>
+                           <small>Více jak 100 panelů</small>
+                           <br><br>
+                           <span class="h3">120 000 Kč</span>
+                           <br><br>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     </div>
+                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Cras justo odio
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Dapibus ac facilisis in
+                        </li>
+                        <li class="list-group-item">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                           </svg>
+                           Vestibulum at eros
+                        </li>
+                     </ul>
+                     <div class="card-body text-center m-3">
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt-5 pl-5 pr-5 container">
+            <h3 class="text-center mt-5">Kontaktní formulář</h3>
+            <p class="text-muted text-center">Neváhejte nás kontaktovat s jakýmkoliv dotazem či objednávkou.</p>
+            <div class="row">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="form-name">Jméno a příjmení</label>
+                        <input type="email" name="name" class="form-control p-2" id="form-name">
+                    </div>                    
+                    <div class="form-group">
+                        <label for="form-email">Emailová adresa</label>
+                        <input type="email" name="email" class="form-control p-2" id="form-email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="form-msg">Vaše zpráva</label>
+                        <textarea name="message" class="form-control" id="form-msg">
+                        </textarea>
+                    </div>
+                    <button type="submit" onclick="$('#contact-form').ajaxForm({url: 'contact.php', type: 'post'})" class="btn btn-dark m-3 w-25">Odeslat</button>
+                </form>        
+                <div id="contact-form-div" class="d-sm-flex justify-content-around">
+                    <div class="text-center mt-4">
+                        <a href="mailto:dorsima@gmail.com" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
+                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5  0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7    4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"/>
+                            </svg>
+                            <p>dorsima@gmail.com</p>                    
+                        </a>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="tel:+420350485565" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            <p>+420 350 485 565</p>                    
+                        </a>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="https://www.google.com/maps/place/Na+Spravedlnosti+974,+Bud%C4%9Bjovick%C3%A9+P%C5%99edm%C4%9Bst%C3%AD,+397+01+P%C3%ADsek/@49.3143652,14.1535277,17z/data=!3m1!4b1!4m5!3m4!1s0x470b4558de5f67dd:0x43d735a03200b037!8m2!3d49.3143652!4d14.1557164" target="_blank" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                            </svg>
+                            <p>Na Spravedlnosti 974/36,<br/> Písek 39701</p>                    
+                        </a>
+                    </div>                                        
+                </div>
+            </div>    
+         </section>        
+    </main>
+
+    <footer class="w-100 mt-5 p-sm-5 border-top bg-differ" style="height: auto;">
+        <div class="row pt-5 px-sm-5 m-auto text-center" style="width: 80vw;">
+            <div class="col-lg">
+                <h3 class="text-center">Dorsima</h3>
+                <p class="mx-lg-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam id dolor. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nunc dapibus tortor vel mi dapibus sollicitudin.</p>
+            </div>
+            <div class="col-lg">
+                <ul class="unstyled-list">
+                    <h3 class="m-lg-2 text-center" id="contact-title">Kontakt</h3>
+                    <li class="m-1">
+                        <a href="tel:+420350485565" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                              <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            +420 350 485 565
+                        </a>                        
+                    </li>
+                    <li class="m-1">
+                        <a href="mailto:dorsima@gmail.com" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
+                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5  0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7    4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"/>
+                            </svg>
+                            dorsima@gmail.com
+                        </a>                        
+                    </li>
+                    <li class="m-1">
+                        <a href="https://www.google.com/maps/place/Na+Spravedlnosti+974,+Bud%C4%9Bjovick%C3%A9+P%C5%99edm%C4%9Bst%C3%AD,+397+01+P%C3%ADsek/@49.3143652,14.1535277,17z/data=!3m1!4b1!4m5!3m4!1s0x470b4558de5f67dd:0x43d735a03200b037!8m2!3d49.3143652!4d14.1557164" target="_blank" class="link-dark text-decoration-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                            </svg>
+                            Na Spravedlnosti 974/36, Písek 39701                    
+                        </a>         
+                    </li>                                            
+                </ul>                
+            </div>
+        </div>
+        <div class="copyright-text">
+            stock.adobe.com <br>lovePik.com
+         </div>
+    </footer>
+</body>
+</html>
