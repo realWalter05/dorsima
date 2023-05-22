@@ -4,11 +4,77 @@
     height: 100vh;
 }
 
+#intro-text {
+    animation: introtext 3s 1;
+}
+
+@keyframes introtext {
+    0% {
+        position: absolute;
+        transform: translateX(-10%);
+    }
+    100% {
+        position: absolute;
+        transform: translateX(0%);
+    }
+}
+
 #solar-banner {
     background: url("img/solarybanner.jpg") no-repeat scroll left bottom;
     background-size: cover;
     height: 50vh;
+    position: relative;
 }
+
+#solar-banner-div {
+    color: white;
+    text-shadow: rgb(49, 49, 49) 2px 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#calculator-banner-div {
+    color: white;
+    text-shadow: rgb(69, 69, 69) 2px 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-style: 600;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+.services-imgs div:hover {
+    transform: translate(2);
+}
+
 
 .spacer {
     margin-top: 20rem;
@@ -44,7 +110,7 @@
 }
 
 .reference-div {
-    width: 35rem !important;
+    width: 40% !important;
 }
 
 .copyright-text {
@@ -60,21 +126,22 @@
     opacity: 0.3;
 }
 
-@media screen and (max-width: 1400px) and (min-width:  1200px) {
-    .reference-div {
-        width: 30rem !important;
-    }
+#calculator {
+    box-shadow: rgb(180, 180, 180) 1px 1px 20px;
+    height: 70vh;
+    width: 100vw;
+    position: relative;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1000px) {
-    .reference-div {
-        width: 27rem !important;
-    }
+#calculator-bg {
+    background: url("img/nature.jpg") no-repeat scroll right bottom;
+    background-size: cover;
 }
+
 
 @media screen and (min-width: 1200px) {
-    #contact form {
-        width: 70%; 
+    #contact-form {
+        width: 90%; 
         margin-left: 4rem;
     }
 
@@ -105,8 +172,5 @@
         float: none;
     }
 }
-
-
-
 
 
