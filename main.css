@@ -18,21 +18,20 @@
     animation: introtext 3s 1;
 }
 
-@keyframes introtext {
-    0% {
-        position: absolute;
-        transform: translateX(-10%);
-    }
-    100% {
-        position: absolute;
-        transform: translateX(0%);
-    }
-}
-
 #solar-banner {
     background: url("img/solarybanner.jpg") no-repeat scroll left bottom;
     background-size: cover;
     height: 50vh;
+    position: relative;
+}
+
+#solar_calculator_image {
+    background: url("img/panel.jpg") no-repeat scroll center bottom;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
     position: relative;
 }
 
@@ -234,4 +233,62 @@
 .counter-box.colored i,
 .counter-box.colored .counter {
 	color: #fff
+}
+
+
+
+
+.toggler label, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+
+.toggler label {
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.options {
+  padding: .5rem;
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.dark {
+  opacity: .5;
+}
+
+/* -------- Switch Styles ------------*/
+[type="checkbox"] {
+  display: none;
+}
+/* Toggle */
+[type="checkbox"]:checked + .toggler .toggle{
+  transform: translateX(100%);
+  background-color: #34323D;
+}
+[type="checkbox"]:checked + .toggler .dark{
+  opacity: 1;
+}
+[type="checkbox"]:checked + .toggler .light{
+  opacity: .5;
+}
+/* toggler */
+[type="checkbox"]:checked + .toggler .body .dark{
+  color: white;
 }

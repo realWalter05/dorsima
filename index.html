@@ -19,7 +19,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse justify-content-end navbar-collapse" id="navContent">
-                    <ul class="navbar-nav  mt-1">
+                    <ul class="navbar-nav mt-1">
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Naše služby</a>
                         </li>                  
@@ -43,7 +43,7 @@
                         <h1 class="mb-3 display-3">Instalace solárních panelů</h1>
                         <h5 class="mb-4">Každá naše nabídka je dělaná na míru přesně Vašemu domu.</h5>
                         <a class="btn btn-outline-light btn-lg m-2" href="#contact" role="button">Kontaktujte nás</a>
-                        <a class="btn btn-outline-light btn-lg m-2" href="#calculator" target="_blank" role="button">Kalkulačka</a>
+                        <a class="btn btn-outline-light btn-lg m-2" href="#calculator" role="button">Kalkulačka</a>
                     </div>
                 </div>
             </div>
@@ -259,36 +259,102 @@
                         <div class="p-5 text-center">
                             <h3 class="display-3">Cena solární instalace</h3>
                             <p>Jedná se pouze o orientační cenu.</p>
-                            <h1>139 000 Kč</h1>
+                            <h1 id="solar_price" class="oswald">------</h1>
+                            <h5 id="solar_dotace">Bez dotace -------</h5>
                             <button type="button" class="btn btn-outline-light">Nechat si zaslat nabídku</button>
                         </div>
                     </div>
             </article>
 
-            <acticle class="col p-5 m-5">
-               <h3 class="text-center mt-5">Solární kalkulačka</h3>
-               <p class="text-muted text-center">Vypočítaní Vaší solární instalace</p>
-               <div class="m-auto" style="width: 15vw;">
-                   <form>
-                       <div class="form-group row">
-                           <label class="col-5 text-center p-4 panel-col" for="form-name">Počet panelů</label>
-                           <input type="number" min="10" name="panel_count" class="form-control p-2 col">
-                       </div>                    
-                       <div class="form-group row">
-                            <label class="col-5 text-center p-2 panel-col" for="form-name">Vyřídit dotaci</label>
-                            <input type="text" name="panel_count" class="form-control p-2 col">
-                        </div>  
-                        <div class="form-group row">
-                            <label class="col-5 text-center p-2 panel-col" for="form-name">Chcete optimizér</label>
-                            <input type="text" min="10" name="panel_count" class="form-control p-2 col">
-                        </div>                                                     
-                   </form>                                  
-                   </div>
-               </div>    
+            <acticle class="col">
+                <h3 class="text-center mt-5">Solární kalkulačka</h3>
+                <p class="text-muted text-center">Vypočítaní Vaší solární instalace</p>
+                <form class="row" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
+                    <div class="col" id="solar_calculator_image">
+
+                        <div class="form-group text-center mt-5 py-5 px-3">
+                           <h4 class="panel-col">Počet panelů</h4>
+                           <input type="number" min="10" step="1" value="10" name="panel_count" placeholder="Počet panelů" style="width: 5vw; border: 0; font-size: 1.5em;" class="border-bottom text-center p-3 m-auto form-control">
+                           <p class="p-3">Rozměry panelu jsou <b>200x100cm</b></p>
+                        </div>       
+                    </div>
+                    <div class="col p-5">    
+                        <article>
+                            <h5>Dotace na solární panely</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie sagittis risus vel mollis pretium turpis fringilla. Aenean eget convallis urna, nec iaculis sapien. Vestibulum sodales, mauris a mattis lobortis, tellus odio pretium erat, eu facilisis ante nunc eget mauris. Ut sodales tellus massa, non bibendum libero commodo at. Vivamus eget tortor fermentum ipsum dictum egestas. 
+                            </p>  
+                            <div class="p-2">
+                                <input type="checkbox" id="dotace_check">
+                                <div class="toggler">
+                                  <div class="body">
+                                    <!-- Middle -->
+                                      <div class="content">
+                                    
+                                        <label for="dotace_check">
+                                          <div class="toggle"></div>
+                                          <div class="options">
+                                            <p class="light">Vyřídím si ji sám</p>
+                                            <p class="dark">Zařídit dotaci</p>
+                                          </div>
+                                        </label>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </article>   
+                        <article class="my-5">
+                            <h5>Wallbox k solární elektrárně</h5>
+                            <p>
+                                Lorem ipsum dolor sitt. Vivamus eget tortor fermentum ipsum dictum egestas. Vestibulum sodales, mauris a mattis lobortis, tellus odio pretium erat, eu facilisis ante nunc eget ma
+                            </p>      
+                            <div class="p-2">
+                                <input type="checkbox" id="wallbox_check">
+                                <div class="toggler">
+                                  <div class="body">
+                                    <!-- Middle -->
+                                      <div class="content">
+                                    
+                                        <label for="wallbox_check">
+                                          <div class="toggle"></div>
+                                          <div class="options">
+                                            <p class="light">Nepotřebuji wallbox</p>
+                                            <p class="dark">Chci wallbox</p>
+                                          </div>
+                                        </label>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>                                                   
+                        </article>   
+                        <article class="my-5">
+                            <h5>Optimizéry</h5>
+                            <p>
+                                Lorem ipsum dolor sit ameVestibulum sodales, mauris a mattis lobortis, tellus odio pretium erat, eu facilisis ante nunc eget mauris. Ut sodales tellus massa, non bibendum libero commodo at. Vivamus eget tortor fermentum ipsum dictum egestas. 
+                            </p>  
+                            <div class="p-2">
+                                <input type="checkbox" id="optimizer_check">
+                                <div class="toggler">
+                                  <div class="body">
+                                    <!-- Middle -->
+                                      <div class="content">
+                                    
+                                        <label for="optimizer_check">
+                                          <div class="toggle"></div>
+                                          <div class="options">
+                                            <p class="light">Optimizér není potřeba</p>
+                                            <p class="dark">Zajistit optimizér</p>
+                                          </div>
+                                        </label>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>                            
+                        </article>                                                                                                                                                                                    
+                    </div>
+                </form>
             </article>
       </section>   
-
-      
 
     </main>
 
@@ -330,7 +396,7 @@
             </div>
         </div>
         <div class="copyright-text">
-            stock.adobe.com <br>lovePik.com
+            stock.adobe.com <br>lovePik.com <br>Macrovector/Freepik
          </div>
     </footer>
 </body>
