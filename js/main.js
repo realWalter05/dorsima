@@ -73,6 +73,6 @@ function CalculateSolar(solarForm, output, output_dotace) {
     console.log("Dotace bude: ", dotace);
     console.log(output);
 
-    output.innerText = "bez dph: " + numberWithCommas(totalPrice - dotace) + " Kč";
+    output.innerText = numberWithCommas(totalPrice - dotace) + " Kč";
     output_dotace.innerText = "Bez dotace: " + numberWithCommas(totalPrice) + " Kč";
 }
