@@ -58,6 +58,13 @@ function CalculateSolar(solarForm, output, output_dotace) {
         totalPrice += 455 * panelCount / 15000 * 75000;
     } 
 
+    // 150 000 Deye 
+    // 75 000 Solax
+    // 100 000 Solaredge
+
+    //  5 = 50 000
+
+
     // elektroprace
     if (700 * panelCount < 15000) {
         totalPrice += 15000;
