@@ -79,15 +79,15 @@
 
         <section class="pt-5 pb-4 text-center w-100">
             <div id="solar-banner" class="bg-image shadow-2-strong w-100">
-                <div class="mask h-100 display-4" id="solar-banner-div">
-                  Pro více informací&nbsp;<a href="tel:+420608473703" style="font-weight: 400;" class="text-white hover-underline-animation">+420 608 473 703</a>
+                <div class="mask row h-100 display-4" id="solar-banner-div">
+                  <p class="col-lg">Pro více informací </p><a href="tel:+420608473703" style="font-weight: 400;" class="col-lg text-white hover-underline-animation">+420 608 473 703</a>
                </div>
             </div>
         </section>           
         
         <section id="references" class="pt-5 pb-5">
          <h3 class="text-center mt-5">Reference</h3>
-         <div id="references-carousel" class="m-5 carousel carousel-dark slide" data-bs-ride="carousel">
+         <div id="references-carousel" class="m-sm-5 carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                <button type="button" data-bs-target="#references-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                <button type="button" data-bs-target="#references-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -340,7 +340,7 @@
 
     <section class="row m-0 p-0 container-fluid" id="calculator">
         
-        <article id="calculator-bg" class="col-lg-4 p-0 m-0">
+        <article id="calculator-bg" class="col-xl-4 p-0 m-0">
             <div class="mask h-100" id="calculator-banner-div">
                 <div class="p-5 text-center">
                     <h3 class="display-3">Cena solární instalace</h3>
@@ -352,7 +352,7 @@
             </div>
         </article>
         
-        <form class="col row m-5 p-5" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
+        <form class="col row m-sm-5 m-2 p-sm-5 p-2" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
             <div class="col-xxl-6 d-flex flex-column justify-content-center">
                 
                 <div class="text-center">
@@ -361,15 +361,25 @@
                     <p class="p-3">Rozměry panelu jsou <b>200x100cm</b></p>
                 </div>  
                 
-                <img src="./img/panel.png" style="width: 100%;">
+                <img src="./img/panel.png" style="width: 80%; margin: auto;">
 
                 <div>
                     <h4 class="p-3 text-center">Vyberte si střídač</h4>
                     <div class="d-flex justify-content-center">
-                        <button type="button" style="width: 10vw; height: 4vh;" class="btn btn-dark">Deye</button> 
-                        <button type="button" style="width: 10vw; height: 4vh;" class="btn btn-light">Solax</button>
-                        <button type="button" style="width: 10vw; height: 4vh;" class="btn btn-dark">Solaredge</button>
+                        <button type="button" class="btn btn-dark">Deye</button> 
+                        <button type="button" class="btn btn-light">Solax</button>
+                        <button type="button" class="btn btn-dark">Solaredge</button>
                     </div>                       
+                    <div class="row p-2">
+                        <select class="p-3 form-select" aria-label="Vyberte si kWh baterii">
+                            <option selected>Vyberte si kWh baterii</option>
+                            <option value="1">5 kW</option>
+                            <option value="2">10 kw</option>
+                            <option value="3">15 kW</option>
+                            <option value="3">25 kW</option>
+                            <option value="3">50 kW</option>
+                        </select>
+                    </div>
                 </div>
 
             </div>

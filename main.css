@@ -173,6 +173,12 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .form-contact {
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width: 600px) {
     #contact form button {
         margin: 0.5rem 0 0 0 !important;
