@@ -35,8 +35,8 @@
     background: url("img/panel.jpg") no-repeat scroll center bottom;
     background-size: cover;
     height: 50vh;
-
     position: relative;
+    display: flex;
 }
 
 #solar-banner-div {
@@ -126,10 +126,6 @@
     background: rgb(248, 248, 250);
 }
 
-.reference-div {
-    width: 40% !important;
-}
-
 .copyright-text {
     opacity: 0.3;
     text-align: right;
@@ -144,11 +140,6 @@
 }
 
 #calculator {
-    height: 70vh;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    position: relative;
     box-shadow: rgb(150, 150, 150) 2px 2px 15px;
 }
 
@@ -170,15 +161,16 @@
 
 
 @media screen and (min-width: 1200px) {
-    #contact-form {
-        width: 90%; 
-        margin-left: 4rem;
-    }
-
     #contact-form-div {
          width: 20%;
          display: block !important;
     }
+}
+
+@media screen and (max-width: 1100px) {
+  .form-contact {
+       width: 60% !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -191,6 +183,9 @@
         width: 100% !important;
     }
 
+    .form-contact {
+      width: 100% !important;
+    }
 
     #contact-title {
         margin-top: 1.5rem !important;
@@ -247,9 +242,6 @@
 	color: #fff
 }
 
-
-
-
 .toggler label, .toggle {
   height: 2.4rem;
   border-radius: 100px;
@@ -305,39 +297,39 @@
   color: white;
 }
 
-  .form-contact .title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 3.2em;
-    line-height: 48px;
-    padding-bottom: 48px;
-       color: #43ca8b;
-      background: #5543ca;
-      background: -moz-linear-gradient(left,#1c6615  0%,#43ca6c 100%) !important;
-      background: -webkit-linear-gradient(left,#3e804f  0%,#70bd7a 100%) !important;
-      background: linear-gradient(to right,#086939  0%,#43ca5a  100%) !important;
-      -webkit-background-clip: text !important;
-      -webkit-text-fill-color: transparent !important;
-  }
-  
-  .contact-form .form-field {
-    position: relative;
-    margin: 32px 0;
-  }
-  .contact-form .input-text {
-    display: block;
-    width: 100%;
-    height: 36px;
-    border-width: 0 0 2px 0;
-    border-color: #43ca87;
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
-  }
-  .contact-form .input-text:focus {
-    outline: none;
-  }
+.form-contact .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3.2em;
+  line-height: 48px;
+  padding-bottom: 48px;
+  color: #43ca8b;
+  background: #5543ca;
+  background: -moz-linear-gradient(left,#1c6615  0%,#43ca6c 100%) !important;
+  background: -webkit-linear-gradient(left,#3e804f  0%,#70bd7a 100%) !important;
+  background: linear-gradient(to right,#086939  0%,#43ca5a  100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #43ca87;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
   .contact-form .input-text:focus + .label,
   .contact-form .input-text.not-empty + .label {
     -webkit-transform: translateY(-24px);
