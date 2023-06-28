@@ -79,8 +79,8 @@
 
         <section class="pt-5 pb-4 text-center w-100">
             <div id="solar-banner" class="bg-image shadow-2-strong w-100">
-                <div class="mask row h-100 display-4" id="solar-banner-div">
-                  <p class="col-lg">Pro více informací </p><a href="tel:+420608473703" style="font-weight: 400;" class="col-lg text-white hover-underline-animation">+420 608 473 703</a>
+                <div class="mask h-100 display-4" id="solar-banner-div">
+                  <p class="">Pro více informací</p><a href="tel:+420608473703" class="text-white hover-underline-animation">+420 608 473 703</a>
                </div>
             </div>
         </section>           
@@ -302,27 +302,27 @@
 
                              <form class="contact-form row kwes-form" action="https://kwesforms.com/api/foreign/forms/jPGKjObSRa93IFHHFIhw">
                                 <div class="form-field col-lg-6">
-                                    <input id="name" name="name" class="input-text js-input" type="text" required>
+                                    <input id="name" name="name" class="input-text js-input" onchange="this.classList.add('not-empty');" type="text" required>
                                     <label class="label" for="name">Jméno</label>
                                 </div>
                                 <div class="form-field col-lg-6 ">
-                                    <input id="surname" name="surname" class="input-text js-input" type="text" required>
+                                    <input id="surname" name="surname" class="input-text js-input" type="text" onchange="this.classList.add('not-empty');" required>
                                     <label class="label" for="surname">Příjmení</label>
                                 </div>
                                 <div class="form-field col-lg-6 ">
-                                    <input id="email" name="email" class="input-text js-input" type="email" required>
+                                    <input id="email" name="email" class="input-text js-input" type="email" onchange="this.classList.add('not-empty');" required>
                                     <label class="label" for="email">Email</label>
                                 </div>
                                 <div class="form-field col-lg-6 ">
-                                    <input id="phone" name="phone" class="input-text js-input" type="text" required>
+                                    <input id="phone" name="phone" class="input-text js-input" type="text" onchange="this.classList.add('not-empty');" required>
                                     <label class="label" for="phone">Telefoní číslo</label>
                                 </div>
                                  <div class="form-field col-lg-12">
-                                     <input id="address" name="address" class="input-text js-input" type="text" required>
+                                     <input id="address" name="address" class="input-text js-input" type="text" onchange="this.classList.add('not-empty');" required>
                                      <label class="label" for="address">Adresa</label>
                                  </div>   
                                  <div class="form-field col-lg-12">
-                                    <input id="message" name="message" class="input-text js-input" type="text" required>
+                                    <input id="message" name="message" class="input-text js-input" type="text" onchange="this.classList.add('not-empty');" required>
                                     <label class="label" for="message">Další informace</label>
                                 </div>                                                                                                                            
                                  <div class="form-field col-lg-12">
@@ -333,7 +333,6 @@
                      </section>   
                 </div>
             </div>
-            <div class="text-white p-2" id="ilustr-img">ilustr. obr.</div>
         </div>
            
     </section> 
