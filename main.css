@@ -166,10 +166,18 @@
 
 
 @media screen and (min-width: 1200px) {
-    #contact-form-div {
-         width: 20%;
-         display: block !important;
-    }
+  #pocet-panelu {
+    width: 10vw !important; 
+  }
+
+  #kwh-select {
+    width: 15vw !important; 
+  }
+
+  #contact-form-div {
+    width: 20%;
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -347,23 +355,34 @@
   opacity: .5;
 }
 
+#pocet-panelu {
+  width: 20vw; 
+  border: 0; 
+  font-size: 1.5em;
+}
+
+#kwh-select {
+  width: 100%; 
+  margin: auto;
+}
+
 /* -------- Switch Styles ------------*/
-[type="checkbox"] {
+#calculator [type="checkbox"], #calculator [type="radio"]  {
   display: none;
 }
 /* Toggle */
-[type="checkbox"]:checked + .toggler .toggle{
+#calculator [type="checkbox"]:checked + .toggler .toggle{
   transform: translateX(100%);
   background-color: #34323D;
 }
-[type="checkbox"]:checked + .toggler .dark{
+#calculator [type="checkbox"]:checked + .toggler .dark{
   opacity: 1;
 }
-[type="checkbox"]:checked + .toggler .light{
+#calculator [type="checkbox"]:checked + .toggler .light{
   opacity: .5;
 }
 /* toggler */
-[type="checkbox"]:checked + .toggler .body .dark{
+#calculator [type="checkbox"]:checked + .toggler .body .dark{
   color: white;
 }
 

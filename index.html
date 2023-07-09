@@ -346,17 +346,17 @@
                     <p>Jedná se pouze o orientační cenu bez dph.</p>
                     <h1 id="solar_price" class="oswald">------</h1>
                     <h5 id="solar_dotace">Bez dotace -------</h5>
-                    <button type="button" class="btn btn-outline-light">Nechat si zaslat nabídku</button>
+                    <button type="button" class="btn btn-outline-light" onclick="WriteSolarForm();">Nechat si zaslat nabídku</button>
                 </div>
             </div>
         </article>
         
-        <form class="col row m-sm-5 m-2 p-sm-5 p-2" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
+        <form class="col row m-sm-5 m-2 p-sm-5 p-2" id="calculator-form" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
             <div class="col-xxl-6 d-flex flex-column justify-content-center">
                 
                 <div class="text-center">
                     <h4 class="panel-col">Počet panelů</h4>
-                    <input type="number" min="10" step="1" value="10" name="panel_count" placeholder="Počet panelů" style="width: 20vw; border: 0; font-size: 1.5em;" class="border-bottom text-center p-3 m-auto form-control">
+                    <input type="number" min="10" step="1" value="10" name="panel_count" placeholder="Počet panelů" id="pocet-panelu" class="border-bottom text-center p-3 m-auto form-control">
                     <p class="p-3">Rozměry panelu jsou <b>200x100cm</b></p>
                 </div>  
                 
@@ -365,18 +365,22 @@
                 <div>
                     <h4 class="p-3 text-center">Vyberte si střídač</h4>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-dark">Deye</button> 
-                        <button type="button" class="btn btn-light">Solax</button>
-                        <button type="button" class="btn btn-dark">Solaredge</button>
+                        
+                        <input type="radio" name="stridac" value="deye" id="deye-check" checked>
+                        <label class="btn btn-outline-dark" for="deye-check" onclick="StridacChoose(this);">Deye</label> 
+                        <input type="radio" name="stridac" value="solax" id="solax-check">
+                        <label class="btn btn-outline-dark" for="solax-check" onclick="StridacChoose(this);">Solax</label> 
+                        <input type="radio" name="stridac" value="solaredge" id="solaredge-check">
+                        <label class="btn btn-outline-dark" for="solaredge-check" onclick="StridacChoose(this);">Solaredge</label> 
                     </div>                       
                     <div class="row p-2">
-                        <select class="p-3 form-select" aria-label="Vyberte si kWh baterii">
-                            <option selected>Vyberte si kWh baterii</option>
-                            <option value="1">5 kW</option>
-                            <option value="2">10 kw</option>
-                            <option value="3">15 kW</option>
-                            <option value="3">25 kW</option>
-                            <option value="3">50 kW</option>
+                        <select class="p-3 form-select" id="kwh-select" aria-label="Vyberte si kWh baterii">
+                            <option selected>Zvolte si kWh baterie</option>
+                            <option value="5">5 kW</option>
+                            <option value="10">10 kw</option>
+                            <option value="15">15 kW</option>
+                            <option value="25">25 kW</option>
+                            <option value="50">50 kW</option>
                         </select>
                     </div>
                 </div>
