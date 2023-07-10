@@ -49,24 +49,47 @@ function StridacChoose(clicked) {
     clicked.classList.add("btn-dark");
 }
 
+function PanelChoose(clicked) {
+    let deye = document.querySelector("#solaris-check");
+    if (document.querySelector('label[for="solaris-check"]').classList.contains("btn-dark")) {
+        let solarisLabel = document.querySelector('label[for="solaris-check"]');
+        solarisLabel.classList.remove("btn-dark");
+        solarisLabel.classList.add("btn-outline-dark");
+    } 
+
+    let solax = document.querySelector("#lipnic-check");
+    if (document.querySelector('label[for="lipnic-check"]').classList.contains("btn-dark")) {
+        let lipnicLabel = document.querySelector('label[for="lipnic-check"]');
+        lipnicLabel.classList.remove("btn-dark");
+        lipnicLabel.classList.add("btn-outline-dark");
+    } 
+
+    clicked.classList.remove("btn-outline-dark");
+    clicked.classList.add("btn-dark");
+}
+
 function WriteSolarForm() {
     let form = document.querySelector("#calculator-form");
 
     let stridac = "";
-    if (form[1])
-        stridac = form[1].value;
-    if (form[2])
-        stridac = form[2].value;
     if (form[3])
-        stridac = form[3].value; 
+        stridac = form[3].value;
+    if (form[4])
+        stridac = form[4].value;
+    if (form[5])
+        stridac = form[5].value; 
 
-    let message = "Mám zájem o " + form[0].value + " panelů, střídač značky " + stridac  + ", baterii s kapacitou " + form[4].value + " kWh. Vyřízení dotace: " + (form[5].checked ? "Ano" : "Ne") + ". Zajištění wallboxu: " + (form[6].checked ? "Ano" : "Ne") + ". Montáž optimizéru: " + (form[7].checked ? "Ano" : "Ne") + ".";
+    let panely = "";
+    if (form[1])
+        panely = form[1].value;
+    if (form[2])
+        panely = form[2].value;
+
+    let message = "Mám zájem o " + form[0].value + " " + panely + " panelů, střídač značky " + stridac  + ", baterii s kapacitou " + form[4].value + " kWh. Vyřízení dotace: " + (form[5].checked ? "Ano" : "Ne") + ". Zajištění wallboxu: " + (form[6].checked ? "Ano" : "Ne") + ". Montáž optimizéru: " + (form[7].checked ? "Ano" : "Ne") + ".";
     
     let msgInput = document.querySelector("#message");
     msgInput.value = message;
     msgInput.classList.add("not-empty");
-
-    document.querySelector("#contact").scrollIntoView();
 }
 
 function CalculateSolar(solarForm, output, output_dotace) {
@@ -75,15 +98,18 @@ function CalculateSolar(solarForm, output, output_dotace) {
 
     const panelCount = solarForm[0].value;
 
-    const deye = solarForm[1].checked;
-    const solax = solarForm[2].checked;
-    const solaredge = solarForm[3].checked;
+    const solaris = solarForm[1].checked;
+    const lipnic = solarForm[2].checked;
 
-    const kwhBaterie = solarForm[4].value;
+    const deye = solarForm[3].checked;
+    const solax = solarForm[4].checked;
+    const solaredge = solarForm[5].checked;
 
-    const vyriditDotaci = solarForm[5].checked;
-    const chceteWallbox = solarForm[6].checked;
-    const chceteOptimizer = solarForm[7].checked;
+    const kwhBaterie = solarForm[6].value;
+
+    const vyriditDotaci = solarForm[7].checked;
+    const chceteWallbox = solarForm[8].checked;
+    const chceteOptimizer = solarForm[9].checked;
 
 
     if (vyriditDotaci) {
@@ -103,6 +129,12 @@ function CalculateSolar(solarForm, output, output_dotace) {
 
     // PANELY
     totalPrice += panelCount * 13200;
+
+    if (solaris)
+        totalPrice += 10000;
+    
+    if (lipnic)
+        totalPrice += 20000;
 
 
     // STRIDACE

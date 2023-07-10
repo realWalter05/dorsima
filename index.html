@@ -346,17 +346,24 @@
                     <p>Jedná se pouze o orientační cenu bez dph.</p>
                     <h1 id="solar_price" class="oswald">------</h1>
                     <h5 id="solar_dotace">Bez dotace -------</h5>
-                    <button type="button" class="btn btn-outline-light" onclick="WriteSolarForm();">Nechat si zaslat nabídku</button>
                 </div>
             </div>
         </article>
         
-        <form class="col row m-sm-5 m-2 p-sm-5 p-2" id="calculator-form" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
+        <form class="col row m-xl-5 m-2 p-xl-5 p-2" id="calculator-form" onchange="CalculateSolar(this, document.querySelector('#solar_price'), document.querySelector('#solar_dotace'));">
             <div class="col-xxl-6 d-flex flex-column justify-content-center">
                 
                 <div class="text-center">
-                    <h4 class="panel-col">Počet panelů</h4>
+                    <h2 class="solar-name-phone display-2 m-3">Solární kalkulačka</h2>
+                    <h4 class="panel-col">Počet a typ panelů</h4>
                     <input type="number" min="10" step="1" value="10" name="panel_count" placeholder="Počet panelů" id="pocet-panelu" class="border-bottom text-center p-3 m-auto form-control">
+                    <div class="d-flex justify-content-center">
+                        <input type="radio" name="stridac" value="solaris" id="solaris-check" checked>
+                        <label class="btn btn-outline-dark" for="solaris-check" onclick="PanelChoose(this);">Solaris</label> 
+                        
+                        <input type="radio" name="stridac" value="lipnic" id="lipnic-check">
+                        <label class="btn btn-outline-dark" for="lipnic-check" onclick="PanelChoose(this);">Lipnic</label> 
+                    </div>                    
                     <p class="p-3">Rozměry panelu jsou <b>200x100cm</b></p>
                 </div>  
                 
@@ -365,11 +372,12 @@
                 <div>
                     <h4 class="p-3 text-center">Vyberte si střídač</h4>
                     <div class="d-flex justify-content-center">
-                        
                         <input type="radio" name="stridac" value="deye" id="deye-check" checked>
                         <label class="btn btn-outline-dark" for="deye-check" onclick="StridacChoose(this);">Deye</label> 
+
                         <input type="radio" name="stridac" value="solax" id="solax-check">
                         <label class="btn btn-outline-dark" for="solax-check" onclick="StridacChoose(this);">Solax</label> 
+
                         <input type="radio" name="stridac" value="solaredge" id="solaredge-check">
                         <label class="btn btn-outline-dark" for="solaredge-check" onclick="StridacChoose(this);">Solaredge</label> 
                     </div>                       
@@ -465,10 +473,10 @@
                       </div>
                     </div>
                 </div>                            
+                <a href="#contact" onclick="WriteSolarForm();">Mám zájem o nabídku</a>
                 </article>                                                                                                                                                                                    
             </div>
         </form>
-
     </section>
 
     </main>
