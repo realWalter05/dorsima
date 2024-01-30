@@ -190,7 +190,7 @@
   }
   
   .form-field {
-    margin: 24px 0 !important;
+    margin: 18px 0 !important;
   }
 
   #calculator {
@@ -211,7 +211,11 @@
   }
 
   .form-field {
-    margin: 24px 0 !important;
+    margin: 17px 0 !important;
+  }
+
+  .form-contact .title {
+    padding-bottom: 20px !important; 
   }
 }
 
