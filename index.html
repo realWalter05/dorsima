@@ -20,8 +20,9 @@
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <script src="jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 
 <body>
@@ -64,7 +65,9 @@
             <div class="text-white p-2" id="ilustr-img">ilustr. obr.</div>
         </div>
     </header>
+
     <main>
+
         <section id="services" class="mt-5 pt-5 pb-5 mb-5">
             <div class="container text-center mt-3">
                 <h3 class="oswald">DORSIMA s.r.o.</h3>
@@ -95,21 +98,20 @@
             </div>
         </section>
 
-        <section>
-            <div id="map"></div>
-
-            <!-- prettier-ignore -->
-            <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
-                    ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
-        </section>
-
-        <section class="pt-5 pb-4 text-center w-100">
+        <section class="pt-5 text-center w-100">
             <div id="solar-banner" class="bg-image shadow-2-strong w-100">
                 <div class="mask h-100 display-4" id="solar-banner-div">
                     <p class="">Pro více informací</p><a href="tel:+420608473703"
                         class="text-white hover-underline-animation">+420 608 473 703</a>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <div id="map" style="clear:both; height:75vh;"></div>
+            <!-- prettier-ignore -->
+            <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+                    ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
         </section>
 
         <section id="references" class="pt-5 pb-5">
@@ -358,8 +360,6 @@
             </div>
         </section>
 
-
-
         <section id="contact">
             <div id="form-image" class="bg-image shadow-2-strong" style="position: relative;">
                 <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.5);">
@@ -510,6 +510,7 @@
         </div>
     </footer>
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
