@@ -20,6 +20,8 @@
     <link rel="icon" type="image/x-icon" href="./img/logo.png">
     <script src="jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 </head>
 
 <body>
@@ -91,6 +93,14 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <div id="map"></div>
+
+            <!-- prettier-ignore -->
+            <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+                    ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
         </section>
 
         <section class="pt-5 pb-4 text-center w-100">
@@ -357,7 +367,6 @@
                         <section class="form-contact">
                             <div>
                                 <h1 class="title">Uvažujete o fotovoltaice?</h1>
-
                                 <form class="contact-form row kwes-form"
                                     action="https://kwesforms.com/api/foreign/forms/jPGKjObSRa93IFHHFIhw">
                                     <div class="form-field col-lg-6">
@@ -380,16 +389,23 @@
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="phone">Telefoní číslo</label>
                                     </div>
-                                    <div class="form-field col-lg-12">
+                                    <div class="form-field col-lg-6">
                                         <input id="address" name="address" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="address">Adresa</label>
+                                    </div>
+                                    <div class="form-field col-lg-6 ">
+                                        <input id="spotreba" name="spotreba" class="input-text js-input" type="number"
+                                            onchange="this.classList.add('not-empty');" required>
+                                        <label class="label" for="spotreba">Spotřeba kW</label>
                                     </div>
                                     <div class="form-field col-lg-12">
                                         <input id="message" name="message" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="message">Další informace</label>
                                     </div>
+                                    <div class="form-text">Budeme Vás kontaktovat s nezávaznou nabídkou</div>
+
                                     <div class="form-field col-lg-12">
                                         <input class="submit-btn" type="submit" value="Odeslat">
                                     </div>
@@ -414,9 +430,8 @@
             <div class="row mx-lg-5">
                 <div class="col-xl my-5 p-xl-5">
                     <h3 class="oswald">Zařídíme za vás celé dispečerské řízení</h3>
-                    <p><em>Jsme odborníci na fotovoltaické elektrárny, jejich realizaci a dodávku, včetně administrativy
-                            a
-                            zařízení dotací</em></p>
+                    <p><em>Jsme odborníci na fotovoltaické elektrárny, jejich realizaci a dodávku, včetně
+                            administrativy</em></p>
                     <p> Podle zákona je výrobce elektřiny povinen vybavit výrobnu zařízením, které umožňuje dispečerské
                         řízení. Některé výrobny již dnes instalované dispečerské řízení, ale toto nemusí být v rozsahu
                         posledních požadovaných změn, které dříve energetické společnosti nepožadovaly. Umíme v souladu
@@ -429,8 +444,9 @@
                         <li class="list-group-item">Do 15 dnů</li>
                         <li class="list-group-item">Zařídíme za vás vše</li>
                         <li class="list-group-item">O nic se nebudete muset starat</li>
+                        <li class="list-group-item">uset starat</li>
                         <li class="list-group-item">Již desítky spokojených zakázek</li>
-                      </ul>
+                    </ul>
                 </div>
                 <div class="col-xl p-xl-5">
                     <img src="./img/dispecer.jpg" alt="Obrázek dispečerského řízení" class="float-lg-end w-sm-100 w-75">
