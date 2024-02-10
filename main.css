@@ -186,7 +186,7 @@
 
 @media screen and (max-width: 1700px) {
   .form-contact .title {
-    padding-bottom: 12px !important; 
+    padding-bottom: 8px !important; 
     font-size: 2.8em !important;
   }
 }
@@ -222,7 +222,7 @@
   }
 
   .form-contact .title {
-    padding-bottom: 16px !important; 
+    padding-bottom: 12px !important; 
   }
 }
 
@@ -328,6 +328,10 @@
     transition: ease 50ms;
 }
 
+#nohover:hover {
+  transform: scale(1.00) !important;
+}
+
 .counter { 
 	display: block;
 	font-size: 32px;
@@ -418,7 +422,7 @@
   letter-spacing: 3px;
   font-size: 3.2em;
   line-height: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 16px;
   color: #43ca8b;
   background: #5543ca;
   background: -moz-linear-gradient(left,#1c6615  0%,#43ca6c 100%) !important;
@@ -584,4 +588,9 @@ body {
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   height: 50px;
   width: auto;
+}
+
+
+#map {
+  height: 75vh;
 }

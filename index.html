@@ -108,7 +108,7 @@
         </section>
 
         <section>
-            <div id="map" style="clear:both; height:75vh;"></div>
+            <div id="map" style="clear:both;"></div>
             <!-- prettier-ignore -->
             <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
                     ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
@@ -369,6 +369,8 @@
                                 <h1 class="title">Uvažujete o fotovoltaice?</h1>
                                 <form class="contact-form row kwes-form"
                                     action="https://kwesforms.com/api/foreign/forms/jPGKjObSRa93IFHHFIhw">
+                                    <div class="display-6">Vyplňte formulář níže</div>
+
                                     <div class="form-field col-lg-6">
                                         <input id="name" name="name" class="input-text js-input"
                                             onchange="this.classList.add('not-empty');" type="text" required>
@@ -422,34 +424,43 @@
 
 
             <div>
-                <div class="counter-box colored">
-                    <h1 class="text-white oswald">Dispečerské řízení a přenos měření v elektrice</h1>
+                <div class="counter-box colored" id="nohover">
+                    <h1 class="text-white oswald">Dispečerské řízení fotovoltaických elektráren</h1>
                 </div>
             </div>
 
             <div class="row mx-lg-5">
                 <div class="col-xl my-5 p-xl-5">
                     <h3 class="oswald">Zařídíme za vás celé dispečerské řízení</h3>
-                    <p><em>Jsme odborníci na fotovoltaické elektrárny, jejich realizaci a dodávku, včetně
-                            administrativy</em></p>
-                    <p> Podle zákona je výrobce elektřiny povinen vybavit výrobnu zařízením, které umožňuje dispečerské
-                        řízení. Některé výrobny již dnes instalované dispečerské řízení, ale toto nemusí být v rozsahu
-                        posledních požadovaných změn, které dříve energetické společnosti nepožadovaly. Umíme v souladu
-                        s
-                        posledními požadavky jednotlivých energetických společností, dodávku dispečerského řízení dle
-                        požadavků jednotlivých energetických společností dle platných legislativ a požadavků dané
-                        aplikace.
+                    <p><em>Vybavena dispečerským řízením musí být každá výrobna s instalovaným výkonem vyšším než 100
+                            kW</em></p>
+                    <p>
+                        Dispečerské řízení se řídí pravidly pro provozování distribuční soustav - příloha č. 4 PPDS.
+                        Dle této přílohy musí každý provozovatel distribuční soustavy postupovat a stanovit ve smlouvě o
+                        připojení konkrétní podmínky pro každou výrobnu. Tyto podmínky jsou vždy specifikovaný ve
+                        smlouvě o připojení, kterou vydává
+                        místní distributor elektřiny.
+                        Umíme v souladu s
+                        posledními požadavky jednotlivých distribučních společností zajistit dispečerské řízení
+                        instalovaných výroben.
                     </p>
+                    <h5 class="oswald">Dispečerské řízení obsahuje zhruba tyto povinnosti:</h5>
+                    <ul>
+                        <li>Online přenos měření napětí proudu a jelového proudu a dalších veličin měření, které určí mistní distributor</li>
+                        <li>Online řízení výkonu výrobny dle požadovků distributora</li>
+                        <li>Online přenos aktuálního výkonu výrobny</li>
+                        <li>Technicky zabezpečit na pokyn distributora odpojení výrobny od sítě</li>
+                        <li>Zajistit přenos stavu vybraných přístrojů (např. jističů výrobny)</li>
+                        <li>Přenos dat z dispečerského systému na dispečink distributora musí plnit požadavky na kybernetickou bezpečnost</li>
+                    </ul>
                     <ul class="list-group">
-                        <li class="list-group-item">Do 15 dnů</li>
-                        <li class="list-group-item">Zařídíme za vás vše</li>
-                        <li class="list-group-item">O nic se nebudete muset starat</li>
-                        <li class="list-group-item">uset starat</li>
-                        <li class="list-group-item">Již desítky spokojených zakázek</li>
+                        <li class="list-group-item bg-dark text-white">Máme již několik úspěšných realizací</li>
+                        <li class="list-group-item">Dle současné legislativy</li>
+                        <li class="list-group-item bg-dark text-white">Zajistíme vypracovaní dokumentace v rozsahu nutném pro schválení distributorem</li>
                     </ul>
                 </div>
                 <div class="col-xl p-xl-5">
-                    <img src="./img/dispecer.jpg" alt="Obrázek dispečerského řízení" class="float-lg-end w-sm-100 w-75">
+                    <img src="./img/dispecer.jpg" alt="Obrázek dispečerského řízení" class="float-lg-end w-sm-100 mt-5 w-75">
                 </div>
             </div>
         </section>
