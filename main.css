@@ -39,6 +39,13 @@
     display: flex;
 }
 
+#dispecer-background {
+  background-image: url("./img/dispecer.jpg");
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: auto;
+}
+
 #solar-banner-div {
     color: white;
     text-shadow: rgb(49, 49, 49) 2px 2px 10px;
