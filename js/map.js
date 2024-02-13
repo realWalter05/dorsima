@@ -1,3 +1,17 @@
+async function eventMap() {
+
+await google.maps.event.addListener(map, 'zoom_changed', function () {
+    var zoomLevel = map.getZoom();
+    //DEBUG alert(zoomLevel+', '+map.getMapTypeId());
+    var sMapType;
+    // === IF Zoom Level <= 8 use mapStyleZoomedIn 
+    if (zoomLevel <= 8)
+        console.log("zoom");
+    // === If Zoom Level > 8 use mapStyleZoomedOut 
+    else
+        console.log("nozoom");
+});
+}
 async function initMap() {
     // Request needed libraries.
     const { Map } = await google.maps.importLibrary("maps");
@@ -101,7 +115,7 @@ const properties = [
         vykon: 5.3,
         panely: 12,
         position: {
-            lat: 49.21338206154829, 
+            lat: 49.21338206154829,
             lng: 14.189628372059293
         },
     },
@@ -112,7 +126,7 @@ const properties = [
         vykon: 5.3,
         panely: 12,
         position: {
-            lat: 49.41338206154829, 
+            lat: 49.41338206154829,
             lng: 14.189628372059293
         },
     },
@@ -123,7 +137,7 @@ const properties = [
         vykon: 5.3,
         panely: 12,
         position: {
-            lat: 49.21338206154829, 
+            lat: 49.21338206154829,
             lng: 14.229628372059293
         },
     },
