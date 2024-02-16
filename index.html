@@ -42,9 +42,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#references">Reference</a>
                         </li>
-                        <li class="nav-item">
+                        <!--   <li class="nav-item">
                             <a class="nav-link" href="#map">Mapa</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
@@ -110,12 +110,11 @@
             </div>
         </section>
 
-        <section>
+        <!--<section>
             <div id="map" style="clear:both;"></div>
-            <!-- prettier-ignore -->
             <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
                     ({ key: "AIzaSyC8ZNMFgXm7AzeLyN2LThhMTCvjWzbRDJE", v: "weekly" });</script>
-        </section>
+        </section>-->
 
         <section id="references" class="pt-5 pb-5">
             <h3 class="text-center mt-5">Reference</h3>
@@ -374,44 +373,44 @@
                                     action="https://kwesforms.com/api/foreign/forms/ZJF0BseZOBsFTU98JOIF">
                                     <div class="h4">Vyplňte formulář níže</div>
 
-                                    <div class="form-field col-lg-6">
+                                    <div class="form-field col-sm-6">
                                         <input id="name" name="name" class="input-text js-input"
                                             onchange="this.classList.add('not-empty');" type="text" required>
                                         <label class="label" for="name">Jméno</label>
                                     </div>
-                                    <div class="form-field col-lg-6 ">
+                                    <div class="form-field col-sm-6 ">
                                         <input id="surname" name="surname" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="surname">Příjmení</label>
                                     </div>
-                                    <div class="form-field col-lg-6 ">
+                                    <div class="form-field col-sm-6 ">
                                         <input id="email" name="email" class="input-text js-input" type="email"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="email">Email</label>
                                     </div>
-                                    <div class="form-field col-lg-6 ">
+                                    <div class="form-field col-sm-6 ">
                                         <input id="phone" name="phone" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="phone">Telefoní číslo</label>
                                     </div>
-                                    <div class="form-field col-lg-6">
+                                    <div class="form-field col-sm-6">
                                         <input id="address" name="address" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="address">Adresa</label>
                                     </div>
-                                    <div class="form-field col-lg-6 ">
+                                    <div class="form-field col-sm-6 ">
                                         <input id="spotreba" name="spotreba" class="input-text js-input" type="number"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="spotreba">Spotřeba kW</label>
                                     </div>
-                                    <div class="form-field col-lg-12">
+                                    <div class="form-field col-sm-12">
                                         <input id="message" name="message" class="input-text js-input" type="text"
                                             onchange="this.classList.add('not-empty');" required>
                                         <label class="label" for="message">Další informace</label>
                                     </div>
                                     <div class="form-text">Budeme Vás kontaktovat s nezávaznou nabídkou</div>
 
-                                    <div class="form-field col-lg-12">
+                                    <div class="form-field col-sm-12">
                                         <input class="submit-btn" type="submit" value="Odeslat">
                                     </div>
                                 </form>
@@ -423,7 +422,7 @@
 
         </section>
 
-        <section class="p-5 my-5" id="dispecerske">
+        <section class="p-2 p-sm-5 my-5" id="dispecerske">
 
 
             <div>

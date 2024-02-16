@@ -41,7 +41,7 @@
 
 #dispecer-background {
   background-image: url("./img/dispecer.jpg");
-  background-size:auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: auto;
 }
@@ -201,8 +201,20 @@
 @media screen and (max-width: 1200px) {
   .form-contact {
        width: 60% !important;
+       padding-top: 1rem !important;
+       padding-bottom: 1rem !important;
   }
   
+  #dispecer-background {
+    background-image: url("./img/dispecer.jpg");
+    background-size: contain; 
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50rem;
+    width: 100vw !important;
+  }
+
   .form-field {
     margin: 18px 0 !important;
   }
