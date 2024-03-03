@@ -613,3 +613,8 @@ body {
 #map {
   height: 75vh;
 }
+
+.card-img-top {
+  object-fit: cover;
+  height: 50vh;
+}
