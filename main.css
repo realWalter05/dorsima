@@ -568,62 +568,44 @@ body {
  */
 .property {
   align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  color: #263238;
+  color: white;
   display: flex;
-  font-size: 14px;
-  gap: 50px;
   height: auto;
   justify-content: center;
-  padding: 4px;
-  position: relative;
   position: relative;
   transition: all 0.3s ease-out;
-  width: 30px;
+  border: solid white 4px;
 }
 
+.property_base {
+  height: 4rem !important;
+  width: 7rem !important;
+  background-size: cover!important;
+}
+
+.property .details p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
 .property .details {
   display: none;
-}
-
-.property .card-img-top {
-  display: none;
-}
-
-.property.highlight .card-img-top {
-  display: block !important;
-}
-
-.property.highlight .property_base {
-  display: none !important;
+  transition: all 1s ease-out !important; 
+  color: black !important;
+  height: 100% !important;
+  width: 100% !important;
+  text-align: center !important;
 }
 
 .property.highlight .details {
-  display: block !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-.property.highlight .details .card-img-top {
-  display: block !important;
-  height: 10rem;
+.highlight {
+  border: 0 !important;
 }
-
-.property.highlight .details ul {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-/*
- * Property styles in highlighted state.
- */
-.property.highlight {
-  border-radius: 8px;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  height: 50px;
-  width: auto;
-}
-
 
 #map {
   height: 75vh;
@@ -632,4 +614,8 @@ body {
 .card-img-top {
   object-fit: cover;
   height: 50vh;
+}
+
+.carded {
+  background: rgba(255, 255, 255, .5);
 }
